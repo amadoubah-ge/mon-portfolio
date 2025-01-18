@@ -1,6 +1,20 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll(".fade-in");
+    document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll("nav button");
+    const sections = document.querySelectorAll("main > section");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            sections.forEach(section => section.style.display = "none");
+            const target = document.getElementById(button.dataset.section);
+            if (target) {
+                target.style.display = "block";
+            }
+        });
+    });
+});
+
 
     const appearOptions = {
         threshold: 0.1,

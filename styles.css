@@ -45,6 +45,14 @@ footer {
     transform: translateY(0);
 }
 main > section {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
+
+main > section:target, main > section.default {
+    visibility: visible;
+    opacity: 1;
+}
+
 

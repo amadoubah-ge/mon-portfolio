@@ -34,6 +34,10 @@ footer {
     background: #333;
     color: #fff;
     padding: 1rem 0;
+    position: fixed; /* Permet au footer de rester toujours en bas */
+    bottom: 0; /* Positionne le footer en bas de la fenêtre */
+    left: 0; /* Étend le footer jusqu'au bord gauche */
+    width: 100%; /* Étend le footer sur toute la largeur */
 }
 .fade-in {
     opacity: 0;

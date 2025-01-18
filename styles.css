@@ -56,5 +56,24 @@ main > section:target, main > section.default {
     visibility: visible;
     opacity: 1;
 }
+/* Harmonisation de l'apparence */
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 0.5rem;
+}
+iframe {
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+a {
+    color: #0f3460;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 
 

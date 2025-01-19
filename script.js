@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Afficher une section par défaut (par exemple, "À propos")
     const defaultSection = document.getElementById("about");
-    if (defaultSection) defaultSection.style.display = "block";
+    if (defaultSection) {
+        sections.forEach(section => section.style.display = "none"); // Masquer toutes les sections
+        defaultSection.style.display = "block"; // Afficher la section par défaut
+    }
+
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {
